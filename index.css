@@ -479,4 +479,8 @@ form .btn2 {
     }
 }
 
-
+@media screen and (max-width: 1037px) {
+    .work2 {
+        display: none;
+    }
+}
