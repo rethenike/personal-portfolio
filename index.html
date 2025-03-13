@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+
+    <link rel="stylesheet" href="./index.css">
+    
+    <script src="https://kit.fontawesome.com/7abc0042b5.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+<!-- Header and first section code -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <a href="#backpic" class="logo">
+                <span class="first-name">Philipp</span> <span class="last-name">Tsang</span>
+            </a>            
+
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div> 
+            <ul class="menu">
+                <li><a href="#About">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+<div id="backpic">
+    <div class="header-text">
+        <p>Web Developer</p>
+        <h1>I am <span>Philipp</span><br> Tsang from Amsterdam</h1>
+    </div>
+</div>
+
+
+<!-- about me page -->
+<section id="About" >
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col1">
+                <img src="./Pictures/image_50420737.jpg" alt="image">
+            </div>
+            <div class="col2">
+                <h1 class="subtitle">About Me</h1>
+                <p class="subtext">Strong proficiency in HTML, CSS, JavaScript, and web development. Skilled in using GitHub, React, Vue.js, and more. My exceptional communication skills enable me to engage effectively with diverse audiences. Fluent in German and English, with a working knowledge of Cantonese and Mandarin, I can navigate and communicate across different cultures.</p>
+
+                <div class="tabs">
+                    <p class="links active" onclick="opentab('skills')">Skills</p>
+                    <p class="links " onclick="opentab('experience')">Experience</p>
+                    <p class="links " onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Website Design</li>
+                        <li><span>Front End</span><br>HTML, CSS, JS</li>
+                        <li><span>Social Skills</span><br>Communication skills and leadership experience</li>
+                    </ul>
+                </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Project Architect</span><br>Administering the design of 2D & 3D blueprints and models of infrastructures on platforms such as ArchiCAD and V-Ray</li>
+                            <li><span>Events Staff</span><br>I delegated and briefed waiting and bar staff on proper restaurant procedures</li>
+                            <li><span>Administration</span><br>I Managed bookings, data organisation, communication, and administrative support</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BA Geography</span><br>Royal Holloway University of London</li>
+                            <li><span>A-levels</span><br>Ampleforth College</li>
+                            <li><span>Coding</span><br>Codecademy & Coursera</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+ </section>
+
+
+<!-- Services -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="servicelist">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Frontend Development</h2>
+                <p>I can design and create a website for you</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>I can design and create a website for you</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Portfolio --> 
+
+<section id="Projects">
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./Pics/Screenshot 2025-03-12 at 15.43.27.png">
+                <div class="layer">
+                    <h3>Calculator App</h3>
+                    <p>Spotify search app</p>
+                    <a href="https://rethenike.github.io/Spotify-search-app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Pics/Screenshot 2024-10-04 at 19.12.19.png">
+                <div class="layer">
+                    <h3>Snake App</h3>
+                    <p>Play Snake!</p>
+                    <a href="https://rethenike.github.io/snake-app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work work2">
+                <img src="Pics/Screenshot 2024-10-04 at 19.12.33.png">
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>Look up the weather</p>
+                    <a href="https://rethenike.github.io/weather-app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div> 
+         <a href="https://github.com/rethenike" class="btn">See more!</a>
+    </div>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="Contact">
+    <div id="contact">
+        <div class="row">
+            <div class="contact-left">
+                <p> <i class="fa-solid fa-paper-plane"></i> Philipp.h.tsang@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +41798950003</p>
+                <br>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/philipp.tsang.7/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/phi1ipptsang/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/philipp-tsang-924b86229/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Personal Portfolio/Philipp_Tsang_-_Web_Developer (3).pdf" class="btn btn2">
+                    Download CV
+                </a>
+            </div> 
+            <div class="contact-right">
+                <form name="submit-to-google-sheet"> 
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Send</button> 
+                </form>
+                <span id="msg"></span>
+        </div> 
+    </div>
+    </section>
+
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzooOMCSaBz8fcxbcfeqJR-gyibV6IZFCzHU-C_dRrjob3_kzalSYGPzBrG-fpkS2dtbg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = 'Message sent successfully!' 
+                setTimeout(function(){
+                    msg.innerHTML = ''
+                }, 5000)
+                form.reset()
+                })
+            
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector(".menu"); // Select the menu by class
+            menu.classList.toggle("active");
+        }
+    </script>
+
+
+
+<script src="./index.js"></script>
+</body>
+
+
+
+</html>
