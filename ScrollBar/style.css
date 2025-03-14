@@ -1,0 +1,145 @@
+.tech-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Seamless scrolling */
+.tech-track {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    animation: scrollLeft 20s linear infinite;
+}
+
+
+/* Tech Icons */
+.tech-item {
+    font-size: 50px;
+    color: #5c8dd6;
+    display: flex;
+    flex-direction: column; /* Stack icon & text */
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 100px; /* Increased height to prevent name cutoff */
+    position: relative;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+/* Hover Effect */
+.tech-item:hover, .tech-item:focus {
+    transform: scale(1.2);
+}
+
+/* Icon Hover Colors */
+.tech-item[data-lang="HTML"]:hover, .tech-item[data-lang="HTML"]:focus {
+    color: #E34F26; 
+}
+
+.tech-item[data-lang="CSS"]:hover, .tech-item[data-lang="CSS"]:focus {
+    color: #1572B6; 
+}
+
+.tech-item[data-lang="JavaScript"]:hover, .tech-item[data-lang="JavaScript"]:focus {
+    color: #F7DF1E; 
+}
+
+.tech-item[data-lang="React"]:hover, .tech-item[data-lang="React"]:focus {
+    color: #61DAFB; 
+}
+
+.tech-item[data-lang="Vue.js"]:hover, .tech-item[data-lang="Vue.js"]:focus {
+    color: #42B883; 
+}
+
+.tech-item[data-lang="Git"]:hover, .tech-item[data-lang="Git"]:focus {
+    color: #F1502F; 
+}
+
+.tech-item[data-lang="GitHub"]:hover, .tech-item[data-lang="GitHub"]:focus {
+    color: #181717; 
+}
+
+.tech-item[data-lang="Node.js"]:hover, .tech-item[data-lang="Node.js"]:focus {
+    color: #83CD29; 
+}
+
+.tech-item[data-lang="Bootstrap"]:hover, .tech-item[data-lang="Bootstrap"]:focus {
+    color: #7952B3; 
+}
+
+.tech-item[data-lang="Sass"]:hover, .tech-item[data-lang="Saas"]:focus {
+    color: #CC6699; 
+}
+
+.tech-item[data-lang="Python"]:hover, .tech-item[data-lang="Python"]:focus {
+    background: linear-gradient(90deg, #306998, #FFD43B); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Icon Hover Colors */
+.tech-item[data-lang="Next.js"]:hover, 
+.tech-item[data-lang="Next.js"]:focus {
+    color: #242121;
+}
+
+.tech-item[data-lang="MongoDB"]:hover, 
+.tech-item[data-lang="MongoDB"]:focus {
+    color: #47A248; 
+}
+
+.tech-item[data-lang="PostgreSQL"]:hover, 
+.tech-item[data-lang="PostgreSQL"]:focus {
+    color: #336791; 
+}
+
+
+/* Icon Name */
+.tech-item::after {
+    content: attr(data-lang);
+    position: absolute;
+    bottom: -10px; 
+    color: white;
+    font-size: 14px;
+    padding: 4px 8px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+/* Show Name on Hover */
+.tech-item:hover::after {
+    opacity: 1;
+}
+
+/* Seamless Animation */
+@keyframes scrollLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsivenes */
+@media screen and (max-width: 768px) {
+    .tech-item {
+        font-size: 35px;
+        width: 60px;
+        height: 80px;
+    }
+
+    .tech-item::after {
+        font-size: 12px;
+        bottom: -12px;
+    }
+}
