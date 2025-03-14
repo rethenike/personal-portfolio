@@ -1,0 +1,129 @@
+.tech-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Seamless scrolling */
+.tech-track {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    animation: scrollLeft 20s linear infinite;
+}
+
+
+/* Tech Icons */
+.tech-item {
+    font-size: 50px;
+    color: #5c8dd6;
+    display: flex;
+    flex-direction: column; /* Stack icon & text */
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 100px; /* Increased height to prevent name cutoff */
+    position: relative;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+/* Hover Effect */
+.tech-item:hover {
+    transform: scale(1.2);
+}
+
+/* Icon Hover Colors */
+.tech-item[data-lang="HTML"]:hover {
+    color: #E34F26; 
+}
+
+.tech-item[data-lang="CSS"]:hover {
+    color: #1572B6; 
+}
+
+.tech-item[data-lang="JavaScript"]:hover {
+    color: #F7DF1E; 
+}
+
+.tech-item[data-lang="React"]:hover {
+    color: #61DAFB; 
+}
+
+.tech-item[data-lang="Vue.js"]:hover {
+    color: #42B883; 
+}
+
+.tech-item[data-lang="Git"]:hover {
+    color: #F1502F; 
+}
+
+.tech-item[data-lang="GitHub"]:hover {
+    color: #181717; 
+}
+
+.tech-item[data-lang="Node.js"]:hover {
+    color: #83CD29; 
+}
+
+.tech-item[data-lang="Bootstrap"]:hover {
+    color: #7952B3; 
+}
+
+.tech-item[data-lang="Sass"]:hover {
+    color: #CC6699; 
+}
+
+.tech-item[data-lang="Python"]:hover {
+    background: linear-gradient(90deg, #306998, #FFD43B); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Icon Name */
+.tech-item::after {
+    content: attr(data-lang);
+    position: absolute;
+    bottom: -10px; 
+    color: white;
+    font-size: 14px;
+    padding: 4px 8px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+/* Show Name on Hover */
+.tech-item:hover::after {
+    opacity: 1;
+}
+
+/* Seamless Animation */
+@keyframes scrollLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsivenes */
+@media screen and (max-width: 768px) {
+    .tech-item {
+        font-size: 35px;
+        width: 60px;
+        height: 80px;
+    }
+
+    .tech-item::after {
+        font-size: 12px;
+        bottom: -12px;
+    }
+}
