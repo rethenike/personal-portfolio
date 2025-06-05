@@ -42,11 +42,11 @@ GitHub Pages – Hosting the website
 
 Update Content – Edit index.html to change text, projects, and descriptions.
 
-Modify Styles – Adjust styles.css to customize colors, fonts, and layouts.
+Modify Styles – Adjust index.css to customize colors, fonts, and layouts.
 
 Add Projects – Update the projects section in index.html with new project links.
 
-Enhance JavaScript – Modify script.js to add more interactivity.
+Enhance JavaScript – Modify index.js to add more interactivity.
 <br>
 <br>
 
