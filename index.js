@@ -32,7 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Attach event listeners to all tabs :D
     links.forEach(link => {
         link.addEventListener("click", function (event) {
-            opentab(event, this.getAttribute("onclick").replace("opentab(event, '", "").replace("')", ""));
+            const tabName = this.dataset.tab;
+            opentab(event, tabName);
         });
     });
 });
