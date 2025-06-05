@@ -462,7 +462,7 @@ nav ul li a:hover::after {
     transition: transform 0.5s;
 }
 
-.social-icons :hover { 
+.social-icons a:hover {
     color: #0066ff;
     transform: translateY(-5px);
 }
