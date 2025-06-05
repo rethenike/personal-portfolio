@@ -96,3 +96,19 @@ GitHub: https://github.com/rethenike
 <br>
 
 💡 This project serves as my portfolio and a showcase of my front-end development skills.
+
+## Running Cypress Tests
+
+1. Install dependencies:
+   ```
+   npm install
+   ```
+2. Run tests:
+   ```
+   npm test
+   ```
+3. For interactive mode:
+   ```
+   npm run cypress:open
+   ```
+
